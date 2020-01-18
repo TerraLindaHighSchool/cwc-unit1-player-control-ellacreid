@@ -15,6 +15,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position;
+        //sets the camera behind the car by adding to the car (player) position
+        transform.position = player.transform.position + new Vector3(0, 5, -7);
     }
 }
