@@ -5,7 +5,8 @@ using UnityEngine;
 public class SpinPropellerX : MonoBehaviour
 {
     public float verticalInput;
-    public float turnSpeed = 35.0f;
+    public float turnSpeed = 10.0f;
+    public float target = player.transform.position;
     
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,6 @@ public class SpinPropellerX : MonoBehaviour
     void Update()
     {
         verticalInput = Input.GetAxis("Vertical");
-        transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
+        transform.RotateAround(target, Vector3.up, verticalInput * turnSpeed * Time.deltaTime);
     }
 }
