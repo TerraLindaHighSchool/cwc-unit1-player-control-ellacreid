@@ -819,7 +819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   rotationSpeed: 100
-  verticalInput: 0
+  verticalInput: 20
 --- !u!1 &899755176
 GameObject:
   m_ObjectHideFlags: 0
